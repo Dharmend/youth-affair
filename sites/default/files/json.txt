@@ -1,0 +1,12 @@
+<?php 
+$view = views_get_current_view();
+
+print(json_encode($view->total_rows));
+?>
+
+
+
+<?php 
+$view = views_get_current_view();
+?>
+<span class="count_total"><?php print $view->total_rows; ?> result(s) found.</span> 

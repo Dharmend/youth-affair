@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<title>Ministry of Youth Affairs and Sports</title>
+<link type="text/css" href="css/style.css" rel="stylesheet">
+<link type="text/css" href="css/mobilestyle.css" rel="stylesheet">
+<link type="text/css" href="css/ipad.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css" />
+<link href="css/high.css" rel="alternate stylesheet" type="text/css" media="screen" title="change" />
+<script src="js/html5.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.dd.min.js"></script>
+<script src="js/jquery.bxslider.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/custom-select.js"></script>
+</head>
+<body>
+<header>
+	<!-- start header_top_nav -->
+  	<div class="header_top_nav">
+    	<div class="wrapper">
+			<!-- start header_top_nav_left -->
+            <div class="header_top_nav_left"> 
+              <a href="#">
+              <img class="tophead_line1" src="images/india_flag.jpg" alt="flag" />
+              <span class="tophead_line2">GOVERNMENT OF INDIA
+              <img src="images/india_more.png" alt="laser icon" /></span>
+              </a> 
+			</div>
+            <!-- end header_top_nav_left -->
+            <!-- start header_top_nav_right -->
+            <div class="header_top_nav_right"> 
+				<div class="social">
+                	<p><a title="Skip to Main Content" href="#content">Skip to Content</a></p>
+                    <ul>
+                      <li><a href="javascript:void(0)"><img src="images/fb_icon.jpg" alt="facebook" title="facebook" /></a></li>
+                      <li><a href="javascript:void(0)"><img src="images/twtr_icon.jpg" alt="twitter" title="twitter" /></a></li>
+                      <li><a href="javascript:void(0)"><img src="images/utube_icon.jpg" alt="you tube" title="you tube" /></a></li>
+                      <li><a href="javascript:void(0)"><img src="images/gplus_ion.jpg" alt="google plus" title="google plus" /></a></li>
+                      <li><a href="javascript:void(0)"><img src="images/ebay_icon.jpg" alt="ebay" title="ebay" /></a></li>
+                    </ul>
+				</div>
+                <div class="switch">
+                    <ul class="switch_text">
+                      <li><a href="javascript:void(0);" class="large increaseFont">A+</a></li>
+                      <li><a href="javascript:void(0);" class="medium resetFont">A</a></li>
+                      <li><a href="javascript:void(0);" class="small decreaseFont">A-</a></li>
+                    </ul>
+                    <ul class="switch_color">
+                      <li><a href="javascript:void(0)" class="dark" onClick="chooseStyle('change', 60);">A</a></li>
+                      <li><a href="javascript:void(0);" class="light" onClick="chooseStyle('none', 60);">A</a></li>
+                    </ul>
+                    <div class="lang">
+                      <select class="styled" id="lang">
+                        <option value="#">English</option>
+                        <option value="#">Bengali</option>	
+                        <option value="#" selected>Hindi</option>
+                      </select>
+                  </div>
+				</div> 
+    		</div>       
+        	<!-- end header_top_nav_right -->  
+		<div class="spacer"></div>
+  	</div>
+	</div>
+    <!-- end header_top_nav -->
+    <!-- start main_header -->
+    <div class="main_header">
+        <div class="wrapper">
+            <div class="logo">
+            <a href="#" alt="Ministry of Youth Affairs and Sports" title="Ministry of Youth Affairs and Sports"><img alt="Ministry of Youth Affairs and Sports" title="Ministry of Youth Affairs and Sports" src="images/logo.png">
+            <p class="maintitle"><span>Ministry of</span> YOUTH AFFAIRS AND SPORTS</p></a>
+            </div>
+        	<div class="main_headerRight">
+            <div class="nav_search">
+            <form>
+            <input type="search" name="search" placeholder="Search"  />
+            <input type="submit" value="" name="submit" />
+            </form>
+            </div>
+            <div class="nav_sitemap"><a href="#">Sitemap</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- end main_header -->
+    <!-- start navigation -->
+    <div class="nav">
+        <div class="wrapper">
+           <!-- <a class="toggle_menu" href="javascript:void(0)">
+            <div class="rmm-toggled-controls"><div class="rmm-toggled-title">Menu</div><div class="rmm-button"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>
+            </a>-->
+            <a href="javascript:void(0)" class="toggleMenu">MENU</a>
+            <ul>
+                <li class="active"><a href="#" class="active">Home</a></li>      
+                <li><a href="about.html">About US</a></li>
+                <li><a href="#">Citizen Charter</a></li>
+                <li><a href="#">Documents</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Suggestions</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- end navigation -->
+</header>
+<!-- strat banner -->
+<section class="banner">
+	<div class="wrapper">
+    	<!-- start bannerLeft -->
+        <div class="bannerLeft">
+        	<p class="titleText">It is my pleasure to congratulate and express best wishes to the NSS volunteers and all the functionaries of NSS on it’s 46th Foundation Day.</p>
+            <a class="pinkMoreBtn" href="#">More..</a>
+            <div class="speech">
+                <h3>Sarbananda Sonowal</h3>
+                <p>Hon'ble Minister of State (Independent Charge) Govt. of India.</p>
+                <p>Ministry of Skill Development, Entrepreneurship, Youth Affairs &amp; Sports</p>
+            </div>    
+        </div>
+        <!-- end bannerLeft -->
+        <!-- start bannerRight -->
+        <div class="bannerRight">
+        	<ul class="bxslider">
+                <li><img src="images/banner_01.jpg" alt="banner_01" title="banner_01" /></li>
+                <li><img src="images/banner_01.jpg" alt="banner_01" title="banner_01" /></li>
+                <li><img src="images/banner_01.jpg" alt="slider3" title="banner_01" /></li>
+            </ul>
+        </div>
+        <!-- end bannerRight -->
+    </div>
+</section>
+<!-- end banner -->
+<div class="spacer"></div>
+<!-- social part -->
+	<section class="social_main" id="content">
+    	<div class="wrapper">
+            <div class="social_first">
+            	<h2>Latest News</h2>
+                <ul class="social_text">
+                	<li>
+                    	<article>
+                        	<p><a href="#">Calling For Tenzing Norgay National Adventure Award 2014</a></p>
+                            <span>09 Feb 2015</span>
+                            <ul class="more_social">
+                              <li><a href="#">Read More...</a></li>
+                              <li><a href="#"><img src="images/more_social.png" alt="" title=""></a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li>
+                    	<article>
+                            <p><a href="#">Calling For Tenzing Norgay National Adventure Award 2014</a></p>
+                            <span>09 Feb 2015</span>
+                            <ul class="more_social">
+                              <li><a href="#">Read More...</a></li>
+                              <li><a href="#"><img src="images/more_social.png" alt="" title=""></a></li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li>
+                    	<article>
+                            <p><a href="#">Calling For Tenzing Norgay National Adventure Award 2014</a></p>
+                            <span>09 Feb 2015</span>
+                            <ul class="more_social">
+                              <li><a href="#">Read More...</a></li>
+                              <li><a href="#"><img src="images/more_social.png" alt="" title=""></a></li>
+                            </ul>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="social_sec">
+            	<h2>Proud Moments of Indian Sports</h2>
+                <ul>
+                	<li><a href="#">2012 London Olympics, 2 Silver and 4 Bronze Medals</a></li>
+                    <li><a href="#">2011 World Cup Cricket, India</a></li>
+                    <li><a href="#">2010 Asian Games, 14 Gold and 17 Silver and 33 Bronze</a></li>
+                    <li><a href="#">2010 Commonwealth Games, 38 Gold and 27 Silver and 36 Bronze</a></li>
+                    <li><a href="#">2008 Beijing Olympics, One Gold and two Bronze Medals</a></li>
+                    <li><a href="#">2007 Twenty20 World Cup Cricket. South Africa</a></li>
+                </ul>
+            </div>
+            
+            <div class="social_third">
+            	<a href="#" class="social_third_one">
+                	<img src="images/annual_report.png" alt="annual_report" title="annual_report">
+                	<span>Annual Report</span>
+                    <p>Find all the Annual Report from 2007 to 2014</p>
+                </a>
+                
+                <a href="#" class="social_third_two">
+                	<img src="images/npyad.png" alt="npyad" title="npyad">
+                	<span>NPYAD</span>
+                    <p>National Programme for Youth and Adolescent Development</p>
+                </a>
+                
+                <a href="#" class="social_third_three">
+                	<img src="images/rti_act.png" alt="annual_report" title="annual_report">
+                	<span>RTI ACT</span>
+                    <p>National Programme for Youth and Adolescent Development</p>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+<!-- social part -->
+
+<!-- start greyBg -->
+<section class="greyBg">
+	<div class="wrapper">
+    	<ul>
+        	<li>
+            	<a href="#" class="greyBg_one"><img src="images/achievements.jpg" title="Initiatives, achievements, Roadmap" alt="Initiatives, achievements, Roadmap">
+                	<span>Initiatives, achievements, Roadmap</span>
+                 </a>
+            </li>
+            <li>
+            	<a href="#" class="greyBg_two"><img src="images/youth_policy.jpg" title="National Youth Policy - 2014" alt="National Youth Policy - 2014">
+                <span>National Youth Policy - 2014</span>
+                </a>
+          </li>
+            <li>
+            	<a href="#" class="greyBg_three"><img src="images/gallery.jpg" title="Photo and Video Gallery" alt="Photo and Video Gallery">
+                <span>Photo and Video Gallery</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="spacer"></div>
+</section>
+<!-- end greyBg -->
+
+<!-- support partners -->
+	<section class="wrapper">
+    		<div class="partners">
+            	<h3>SUPPORT ORGANISATIONS</h3>
+                <ul>
+                	<li><img src="images/partner01.jpg" alt="partner01" title="partner01"></li>
+                    <li><img src="images/partner02.jpg" alt="partner02" title="partner02"></li>
+                    <li><img src="images/partner03.jpg" alt="partner03" title="partner03"></li>
+                    <li><img src="images/partner04.jpg" alt="partner04" title="partner04"></li>
+                    <li><img src="images/partner05.jpg" alt="partner05" title="partner05"></li>
+                    <li><img src="images/partner06.jpg" alt="partner06" title="partner06"></li>
+                    <li><img src="images/partner07.jpg" alt="partner07" title="partner07"></li>
+                    <li><img src="images/partner08.jpg" alt="partner08" title="partner08"></li>
+                </ul>
+            </div>
+    	<div class="spacer"></div>
+    </section>
+<!-- support partners -->
+
+<footer>
+<!-- start topFooter -->
+<div class="topFooter">
+	<div class="wrapper">
+    	<ul>
+        	<li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Hyperlinking Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>	
+</div>
+<!-- end topFooter -->
+<!-- start botFooter -->
+<div class="botFooter">
+	<div class="wrapper">
+    
+    <div class="fbtm_left">
+    	<ul>
+        	<li><a href="#"><img src="images/cqw.png" alt="cqw" title="cqw" /></a></li>
+            <li><a href="#"><img src="images/cmf.png" alt="cmf" title="cmf" /></a></li>
+        </ul>
+    </div>
+    
+    <div class="fbtm_mid">
+    Website Designed Maintained and Hosted By<br />
+<a href="http://www.nic.in/" target="_blank">National Informatics Centre (NIC)</a><br />
+Content Managed by<br />
+<a href="javascript:void(0)" target="_blank">Dept/Ministry of....</a>
+	</div>
+    
+    <div class="fbtm_right">
+    	<div class="lang2">
+          <select class="styled" id="lang">
+          	<option value="#">English</option>
+          	<option value="#">Bengali</option>	
+            <option value="#" selected>Hindi</option>
+          </select>
+      </div>
+      	<a href="http://india.gov.in/" target="_blank"><img src="images/footer_govtlogo.jpg" title="External site that opens in a new window:: National Portal of India" alt="External site that opens in a new window:: National Portal of India" /></a>
+    </div>
+    <div class="spacer"></div>
+    </div>
+</div>
+<!-- end botFooter -->
+</footer>
+</body>
+</html>

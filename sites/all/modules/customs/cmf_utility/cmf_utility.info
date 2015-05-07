@@ -1,0 +1,12 @@
+name = CMF Utility
+package = CMF
+description = Allows Developer to define custom Code.
+core = 7.x
+;configure = admin/config/user-interface/custom-breadcrumbs
+
+version = "7.x-2.0-alpha3"
+core = "7.x"
+project = "cmf_utility"
+datestamp = "1353872502"
+tapas.cse.talukder@gmail.com
+

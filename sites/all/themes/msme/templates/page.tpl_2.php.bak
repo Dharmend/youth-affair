@@ -1,0 +1,198 @@
+<?php
+	global $base_url;
+  $theme_path = $base_url.'/'.drupal_get_path('theme', 'msme');       
+?>
+<header>
+<div class="header_top_nav">
+<div class="wrapper">
+<div class="header_top_nav_left">
+<a href="#"><img class="tophead_line1" src="<?php echo $theme_path;?>/image/header_flag.jpg" alt="flag" /><span class="tophead_line2">GOVERNMENT OF INDIA</span><img class="tophead_line3" src="<?php echo $theme_path;?>/image/icon1.png" alt="laser icon" /></a>
+</div>
+<div class="header_top_nav_right">
+<a href="#main-content" class="skip_cont">Skip to content</a>
+<a href="https://twitter.com/minmsme" target="_blank" class="tophead_fb"></a>
+<a href="https://twitter.com/minmsme" target="_blank" class="tophead_tw"></a>
+<a href="#" class="tophead_line5">A+</a>
+<a href="#" class="tophead_line6">A</a>
+<a href="#" class="tophead_line7">A-</a>
+<a href="#" class="tophead_line4">A</a>
+<select>
+  <option value="Hindi">Select Language</option>
+  <option value="Hindi">Hindi</option>
+  <option value="English">English</option>
+  <option value="Bangali">Bangali</option>
+  <option value="Urdu">Urdu</option>
+  <option value="Punjabi">Punjabi</option>
+</select> 
+</div>
+</div>
+</div>
+<!--Top-Header Section end-->
+
+<div class="main_header">
+<div class="wrapper">
+<div class="logo">
+     <?php if ($logo): ?>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo1" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" />
+      <span class="maintitle">Ministry of <strong>Micro, small & Medium Enterprises </strong><span class="maintitle_line2">(AN ISO 9001:2008 Certified Organization)</span></span>
+      </a>
+    <?php endif; ?>
+</div>
+
+<div class="nav_search">
+<form>
+<input type="search" name="search" value="Search"  />
+<input type="submit" value="" name="submit" />
+</form>
+</div>
+<div class="nav_sitemap"><a href="#">Sitemap</a></div>
+</div>
+<div class="nav">
+<div class="wrapper">
+<a class="toggle_menu" href="javascript:void(0)">
+<div class="rmm-toggled-controls"><div class="rmm-toggled-title">Menu</div><div class="rmm-button"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>
+</a>
+<?php if ($main_menu): ?>
+			  <div id="main-menu" class="navigation" tabindex="-1">
+				<?php $block = module_invoke('menu_block', 'block_view', 2);
+						print render($block['content']);
+				?>
+			  </div> <!-- /#main-menu -->
+			<?php endif; ?>
+                          
+</div>
+</div>
+</div>
+</header>
+
+<div id="main innermain">
+<div class="wrapper">
+
+<!--bradcum start-->
+<div class="bradcum">
+        <?php if ($page['highlighted']): ?>
+                <div id="breadcrumb"><?php print html_entity_decode(render($page['highlighted'])); ?></div>
+        <?php endif; ?>
+</div>
+<!--bradcum end-->
+
+<!--Inner page left start-->
+<div class="innerleft">
+<!--panel 1 start-->
+<div class="main-link">
+  <ul>
+      <li class="linkicon1"><a href="#">Acts, Rules & Notifications</a></li>
+      <li class="linkicon2"><a href="#">International Cooperation</a></li>
+      <li class="linkicon3"><a href="#">Vacancies</a></li>
+      <li class="linkicon4"><a href="#">Tender</a></li>
+      <li class="linkicon5"><a href="#">Other Links</a></li>
+      <li class="linkicon6"><a href="#">Virtual Cluster</a></li>
+  </ul>
+</div>
+<!--Panel 1 end-->
+
+<div class="border-pattern"></div>	
+
+<!--Speeches Start-->
+<div id="accordion"  class="innerspeeche">
+<h3>Documents</h3>   
+        <ul>
+        <li><a href="#">Citizen charter</a></li>
+        <li><a href="#">Resuts Framework Document</a></li>
+        <li><a href="#">Plan and Budget</a></li>
+        <li><a href="#">Reports and Publications</a></li>
+        </ul>    
+<h3>RMEGY</h3>
+<h3>PMEGP</h3>
+<h3>EM</h3>
+<h3>E BOOK</h3>
+</ul>	
+</div>
+
+
+
+<script type="text/javascript">
+$("#accordion > h3").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion > ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});
+
+$('#accordion > ul:eq(0)').show();
+
+</script>
+<!--Speeches Close-->
+
+</div>
+<!--Inner page left end-->
+
+
+<!--Inner page right start-->
+<div class="innerright">
+<div id="content" class="<?php echo $content_class; ?>" role="main">			
+				<a id="main-content"></a>
+				<?php print render($title_prefix); ?>
+				<?php if ($title): ?>
+					<h1 class="page__title title" id="page-title"><?php print t($title); ?></h1>
+				<?php endif; ?>
+				<?php print render($title_suffix); ?>
+				<?php if ($messages): ?>
+					<div id="messages"><div class="section clearfix">
+					  <?php print html_entity_decode($messages); ?>
+					</div></div> <!-- /.section, /#messages -->
+				<?php endif; ?>
+				<?php if ($page['featured']): ?>
+					<div id="featured"><div class="section clearfix">
+					  <?php print render($page['featured']); ?>
+					</div></div> <!-- /.section, /#featured -->
+				<?php endif; ?>
+				
+				<?php print render($tabs); ?>
+				<?php print render($page['help']); ?>
+				<?php if ($action_links): ?>
+					<ul class="action-links"><?php print render($action_links); ?></ul>
+				<?php endif; ?>
+				<?php print cmf_preset_external_links(render($page['content'])); ?>
+			<?php print $feed_icons; ?>
+			</div>
+</div>
+<!--Inner page right end-->
+
+
+
+<!--Organisation start-->
+ <div class="org_logo">
+             <?php if ($page['organizations']): ?>
+              <div id="org_logo_imgs"><?php print render($page['organizations']);?></div>
+	     <?php endif; ?> 
+     </div>   
+<!--Organisation Close-->
+
+</div><!--Main wrapper End-->
+<div class="border-pattern"></div>
+</div><!--Main Section End-->
+
+
+
+<footer>
+<div class="wrapper">
+<div class="footer_nav">
+<a href="javascript:void(0)" class="footer_toggle_menu">Footer Menu</a>
+<?php print render($page['footer']); ?>
+</div>
+<div class="language_changer">
+ <select>
+  <option value="Hindi">Select Language</option>
+  <option value="Hindi">Hindi</option>
+  <option value="English">English</option>
+  <option value="Bangali">Bangali</option>
+  <option value="Urdu">Urdu</option>
+  <option value="Punjabi">Punjabi</option>
+</select>
+</div>
+<div class="footer_content"><p>Content Owned by Ministry of Micro Small & Medium Enterprises, Goverment of India.</p></div>
+</div>
+</footer>
+

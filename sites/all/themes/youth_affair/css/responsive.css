@@ -1,0 +1,805 @@
+/*---------------------------------------------------  responsive css  --------------------------------------*/
+
+
+
+@media only screen and (min-width:995px) and (max-width : 1188px){
+	
+
+.main_wrap{
+	width:96%;
+	padding:0 2%;
+}
+
+.bodypart {
+	padding:12px 0 26px 0;
+}
+
+.banner_right{
+	height:auto;	
+}
+
+
+.banner_right img{
+	width:100%;
+}
+
+.nav_full ul li{
+	padding:0 1%;	
+}
+
+.nav_full ul li a{
+	font-size:72%;	
+}
+
+.body_left{
+	width:60%;	
+}
+
+.iconSet li{
+	width:17%;	
+}
+
+.greenText{
+	text-align:center;	
+}
+
+.quicklink li{
+	width:30%;	
+	padding:0px;
+	vertical-align:top;
+}
+
+.quicklink li a{
+	padding-top:40%;	
+}
+
+.quicklink1{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink1.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink2{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink2.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink3{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink3.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.resp-tabs-list li {
+	font-size:13px !important;	
+}	
+
+.fbtm_mid{
+	margin-left:11%;	
+}
+
+.innerCntntLeft{
+	width:26%	
+}
+
+.innerCntntRight{
+	width:70%;
+}
+	
+}
+
+
+@media only screen and (min-width:768px) and (max-width : 994px){
+	
+.body_left{
+	float:none;
+	margin:30px auto;
+	display:table;
+}
+
+.banner_right{
+	height:auto;	
+}
+
+.main_wrap{
+	width:96%;
+	padding:0 2%;
+}
+
+.bodypart {
+	padding:12px 0 26px 0;
+}
+
+.banner_right img{
+	width:100%;
+}
+
+.btm_head_left{
+	float:none;
+	margin:0 auto;
+	display:table;
+}
+
+.btm_head_right{
+	float:none;
+	margin:20px auto 0;
+	display:table;
+}
+
+
+.quicklink li{
+	width:32%;	
+	padding:0px;
+	vertical-align:top;
+}
+
+.quicklink li a{
+	padding-top:35%;
+	font-size:115%;
+}
+
+.quicklink1{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink1.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink2{
+	text-align:center;
+	width:95%;
+	background:url(../images/quicklink2.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink3{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink3.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.iconSet li{
+	width:17%;	
+}
+
+.body_right{
+	float:none;
+	width:100%;
+}
+
+.body_left{
+	margin-bottom:30px;	
+	max-width:100%;
+}
+
+.greenText{
+	text-align:center;	
+}
+
+.nav_full ul li a{
+	font-size:58.5%;	
+}
+
+.nav_full ul li{
+	padding:0 7px;	
+}
+
+.resp-tabs-list li {
+	font-size:13px;	
+}
+
+.nav_full ul{
+	margin:0 auto;
+	display:table;
+}
+
+.quicklink li a{
+	width:100%;	
+}
+
+.fbtm_mid{
+	margin-left:8%;	
+}
+
+.fbtm_left ul li:first-child{
+	padding-left:0px;
+}
+
+.fbtm_right{
+	float:right;
+}
+
+/* about */
+
+.innerCntntLeft{
+	width:26%	
+}
+
+.innerCntntRight{
+	width:70%;
+}
+
+.innerCntntLeft .quicklink{
+	padding:5%;	
+}
+
+.innerCntntLeft .quicklink li{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink li a{
+	font-size:100%;
+	padding-left:27%;
+}
+
+.quickLeftLinks li{
+	font-size:71%;	
+}
+
+.missionBanner li{
+	width:30%;	
+}
+
+.innerCntntLeft .upload a{
+	font-size:100%;	
+}
+	
+}
+
+
+@media only screen and (min-width:768px) and (max-width : 900px){
+
+.fbtm_mid{
+	margin-left:0;	
+}
+
+}
+
+
+
+@media only screen and (min-width:680px) and (max-width : 767px){
+
+/* about */
+
+.innerCntntLeft{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink{
+	padding:3%;	
+}
+
+.innerCntntLeft .quicklink li:first-child{
+	border:none;	
+}
+
+.innerCntntLeft .quicklink li{
+	display:inline-block;	
+	border-top:none;
+	border-left:1px solid #e99e1a;
+	padding:0 3%;
+	width:26%;
+}
+
+.innerCntntLeft .quicklink1,.innerCntntLeft .quicklink2,.innerCntntLeft .quicklink3{
+	padding-left:31%;	
+}
+
+.quickLeftLinks li{
+	width:44%;
+	display:inline-block;
+}
+
+.innerCntntRight{
+	width:100%;	
+}
+
+
+}
+
+
+@media only screen and (min-width:480px) and (max-width : 679px){
+	
+.innerCntntLeft{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink{
+	padding:3%;	
+}
+
+.innerCntntLeft .quicklink li{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink1,.innerCntntLeft .quicklink2,.innerCntntLeft .quicklink3{
+	width:80%;
+	padding-left:20%;
+	text-align:left;
+}
+
+.objectives li{
+	margin-right:4%;	
+}
+
+
+	
+}
+
+
+
+@media only screen and (min-width:480px) and (max-width : 767px){
+
+
+.main_wrap{
+	width:96%;
+	padding:0 2%;
+}
+
+.bodypart {
+	padding:12px 0 26px 0;
+}
+
+.toggleMenu{
+	display:block;	
+}
+
+.nav_full ul{
+	display:none;	
+}
+
+.nav_full ul li{
+	float:none;
+	display:block;
+	border:none;
+	margin-top:1px;
+	padding:0;
+	
+}
+
+.nav_full ul li a{
+	font-size:14px;
+	display:block;
+	padding:6px 10px;
+}
+
+.nav_full ul li a:hover{
+	background:#2a8981;	
+}
+
+.banner_right img{
+	width:100%;	
+}
+
+.btm_head_left{
+	float:none;
+	margin:0 auto;
+	display:table;
+}
+
+.top_head_left{
+	float:none;
+	margin:0 auto;
+	display:table;
+}
+
+.top_head_right{
+	margin:10px auto 0;
+	float:none;
+	display:table;
+}
+
+.find{
+	float:none;
+	margin:10px auto;
+	display:table;
+	width:80%;
+}
+
+.btm_head_right ul{
+	margin-bottom:10px;	
+}
+
+.find input[type="text"]{
+	width:94%;
+}
+
+
+.quicklink li{
+	width:32%;	
+	padding:0px;
+	vertical-align:top;
+}
+
+.quicklink li a{
+	padding-top:45%;	
+}
+
+.quicklink1{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink1.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink2{
+	text-align:center;
+	width:95%;
+	background:url(../images/quicklink2.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink3{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink3.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.body_right{
+	float:none;
+	margin:0 auto;
+	display:table;
+	width:100%;
+}
+
+.body_left{
+	margin-bottom:30px;	
+}
+
+.iconSet li{
+	width:29%;
+	margin-bottom:15px;
+}
+
+.btm_head_right{
+	float:none;
+	margin:10px auto 0;
+	display:table;
+}
+
+
+.greenText{
+	text-align:center;	
+}
+
+
+#container{
+	width:100% !important;	
+}
+
+.fbtm_left{
+	float:none;
+	display:table;
+	margin:0 auto 15px;
+}
+
+.fbtm_mid{
+	float:none;
+	display:table;
+	margin:0 auto 15px;
+}
+
+.fbtm_right{
+	float:none;
+	display:table;
+	margin:0 auto;	
+}
+
+.innerCntntRight{
+	width:100%;	
+}
+
+.quickLeftLinks li{
+	display:inline-block;
+	width:42%;
+}
+
+.banner_right{
+	height:auto;	
+}
+
+}
+
+
+
+
+@media only screen and (min-width:320px) and (max-width : 479px){
+
+.banner_right{
+	height:auto;	
+}
+
+.main_wrap{
+	width:96%;
+	padding:0 2%;
+}
+
+.bodypart {
+	padding:12px 0 26px 0;
+}
+
+.toggleMenu{
+	display:block;	
+}
+.newsAnnouncementBar h2{
+	font-size:115%;
+}
+
+.upload a{
+	font-size:120%;
+}
+.nav_full ul{
+	display:none;	
+}
+
+.nav_full ul li{
+	float:none;
+	display:block;
+	border:none;
+	margin-top:1px;
+	padding:0;
+	
+}
+
+.nav_full ul li a{
+	font-size:14px;
+	display:block;
+	padding:6px 10px;
+}
+
+.nav_full ul li a:hover{
+	background:#2a8981;	
+}
+
+.top_head_left,.social,.switch,.top_head_right{
+	float:none;
+	margin:8px auto 0;
+	display:table;
+}
+
+.btm_head_left li{
+	width:100%;
+	text-align:center;
+	padding-left:0px;
+	border:none;
+}
+
+.btm_head_right li{
+	padding:0 7px;	
+}
+
+.btm_head_right li a{
+	font-size:53%;	
+}
+
+.find{
+	width:80%;
+	margin:0px auto 6px;
+	display:table;
+	float:none;
+}
+
+.btm_head_right ul{
+	margin-bottom:6px;	
+}
+
+.banner_left{
+	width:100%;	
+}
+
+.banner_right{
+	width:100%;	
+	margin-top:30px;
+}
+
+.banner_right img{
+	width:100%;	
+}
+
+.quicklink li{
+	width:100%;	
+	padding:0px;
+	vertical-align:top;
+	border:none;
+	margin-bottom:20px;
+}
+
+.quicklink li a{
+	padding-top:22%;	
+}
+
+.quicklink1{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink1.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink2{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink2.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.quicklink3{
+	text-align:center;
+	width:100%;
+	background:url(../images/quicklink3.png) center top no-repeat;
+	padding-left:0px;
+}
+
+.iconSet li{
+	width:44%;
+	margin-bottom:15px;
+}
+
+.body_right{
+	width:100%;	
+}
+
+.btm_head_left{
+	float:none;
+	margin:0 auto;
+	display:table;
+}
+
+.btm_head_right{
+	margin:10px auto;
+	display:table;
+	float:none;
+}
+
+.bx-wrapper .bx-pager{
+	bottom:-20px !important;	
+}
+
+.missionBanner{
+	background-size:cover;	
+}
+
+.greenText{
+	text-align:center;	
+}
+
+#container{
+	width:100% !important;	
+}
+
+
+.fbtm_left{
+	float:none;
+	display:table;
+	margin:0 auto 15px;
+}
+
+.fbtm_mid{
+	float:none;
+	display:table;
+	margin:0 auto 15px;
+}
+
+.fbtm_right{
+	float:none;
+	display:table;
+	margin:0 auto;	
+}
+
+.find input[type="text"]{
+	width:90%;	
+}
+
+/* about */
+
+.innerCntntLeft{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink{
+	padding:3%;	
+}
+
+.innerCntntLeft .quicklink li{
+	width:100%;	
+}
+
+.innerCntntLeft .quicklink li a{
+	font-size:112%;	
+}
+
+.innerCntntLeft .quicklink1,.innerCntntLeft .quicklink2,.innerCntntLeft .quicklink3{
+	width:75%;
+	padding-left:25%;
+	text-align:left;
+}
+
+.innerCntntRight{
+	width:100%;
+}
+
+.cntntBlockDiv{
+	width:100%;	
+}
+
+.innerCntntRight h3{
+	display:table;	
+	padding-top:10px;
+}
+
+.objectives li{
+	width:96%;
+	padding-left:4%;
+}
+
+.cntntBlockDiv{
+	padding-right:4%;
+	width:96%;
+}
+
+
+}
+
+
+
+
+
+
+
+/*-------------------------------  for tabs ------------------------------*/
+
+
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+    ul.resp-tabs-list {
+        display: none;
+    }
+
+    h2.resp-accordion {
+        display: block;
+    }
+
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: 100px;
+        clear: none;
+    }
+
+    .resp-accordion-closed {
+        display: none !important;
+    }
+
+    .resp-vtabs .resp-tab-content:last-child {
+        border-bottom: 1px solid #c1c1c1 !important;
+    }
+	
+	.resp-tab-content ul li{
+		width:100%;	
+	}
+}
+
+
+
+#container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        @media only screen and (max-width: 768px) {
+            #container {
+                width: 90%;
+                margin: 0 auto;
+            }
+			
+        }

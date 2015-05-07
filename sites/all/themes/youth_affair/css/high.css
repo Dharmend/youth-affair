@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#000;
+	color:#fff
+}
+a{
+	color:#ffff70
+}
+header .header_top_nav,.nav{
+	background:#333;
+	color:#fff
+}
+header .header_top_nav span,.social p a,.switch_text li a,.nav ul li a,.more_social li a,
+.social_third a span,.social_sec ul li a,.social_text li article p a,
+.about_cont h2,.about_cont p,.about_message h2,.about_message p,
+.inner_report_one span,.inner_report_two span,.inner_report_three span,
+.botFooter a,.com_links ul li a{
+	color:#ffff70
+}
+
+.toggleMenu2{
+	background-color:#666;	
+}
+
+.main_header .logo p.maintitle{
+	color:#fff
+}
+.main_header .logo p.maintitle span,.main_header .nav_search input[type="search"]{
+	color:#ccc
+}
+.main_header .nav_sitemap a,.nav ul li a.active, .nav ul li a:hover .active, .nav ul li a:hover,.bx-wrapper .bx-pager,.greyBg li a{
+	background:#ffff70;
+	color:#333
+}
+.nav{
+	border-bottom-color:#ffff70;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus{
+	background:#000
+}
+.social_main h2, .social_text li article p,
+.social_third a p,.partners h3,
+.inner_report_two p,.inner_report_one p,.inner_report_three p{
+	color:#fff
+}
+.social_third a{
+	background:#333;
+	color:#fff;
+	border:1px solid #fff;
+}
+.social_third a:hover span,.inner_report_one:hover span, .inner_report_two:hover span, .inner_report_three:hover span{
+	color:#fff
+}
+.greyBg li a:hover{
+	background:#333;
+	color:#fff;
+}
+
+.toggleMenu{
+	background:#333 url(../images/toggle.png) 95% center no-repeat;	
+}
+
+.inner_report_one,.inner_report_two,.inner_report_three{
+	background:#333;
+	color:#fff;
+	border:1px solid #fff;	
+}
+
+.com_links{
+	background-color:#333;	
+}
+
+.com_links ul li{
+	border-bottom:1px solid #666;
+	border-top:1px solid #999;
+}
+
+.greyBg li a span{
+	color:#fff;	
+}
+
+.com_links ul li a:hover{
+	background-color:#ffff70;
+	color:#333;
+}

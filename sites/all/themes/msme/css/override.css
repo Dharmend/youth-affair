@@ -1,0 +1,34 @@
+body{background:#000;}
+body header .main_header{ background: none repeat scroll 0 0 #000;}
+body a{color:#ff0;}
+p{color:#fff;}
+body #header .main_header{background: none repeat scroll 0 0 #000;}
+body header .accessibility_top_nav{background: none repeat scroll 0 0 #000;border-bottom: 1px solid #888;}
+header .tophead_line2{color:#ff0;}
+header .main_header .nav ul li a{border-right: 1px solid #ffff00;color: #ffff00;}
+.sidebar h3, h2{color: #fff;}
+.views-field-title a{color:#ff0;}
+header .header_top_nav_right .alink{color: #ff0;}
+header .header_top_nav_right .alink_in{color: #ff0;}
+header .header_top_nav_right .skip_cont{color: #ff0;}
+header .header_top_nav_right .tophead_line5{color: #ff0;}
+header .header_top_nav_right .tophead_line6{color: #ff0;}
+header .header_top_nav_right .tophead_line7{color: #ff0;}
+.quicktabs_main.quicktabs-style-basic{background: none repeat scroll 0 0 #222;}
+.front .quicktabs_main .item-list ul{ color: #ff0;}
+.quicktabs-wrapper{background: none repeat scroll 0 0 #444;}
+ul.quicktabs-tabs.quicktabs-style-basic a{ color: #ff0;}
+#sidebar-second ul li{background: none repeat scroll 0 0 #222;}
+footer .footer_content .cont1{color:#fff;}
+ul.menu li.leaf a{color:#ff0;}
+footer .footer_nav ul li{border-right: 1px solid #ff0;}
+footer .footer_content .cont2{color:#fff;}
+.block-menu-block ul li{background: none repeat scroll 0 0 #333333;}
+.views-field-field-url a{color:#ff0;}
+.views-field-field-attached a{color:#ff0;}
+.block-webspeech button{ background: none repeat scroll 0 0 #ff0; color: #000;}
+#main h1{color:#fff;}
+.nbs-flexisel-inner{ background: none repeat scroll 0 0 #333333;}
+.quicktabs-wrapper ul li.active{background: none repeat scroll 0 0 #111;}
+.easy-breadcrumb a{color:#ff0;}
+li a.active{color:#fff;}

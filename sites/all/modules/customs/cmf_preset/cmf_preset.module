@@ -1,0 +1,152 @@
+<?php
+function cmf_preset_init(){
+	//echo 123;
+}
+
+function get_site_last_update(){
+	$timestamp = db_select('node', 'n')
+							->fields('n', array('changed'))
+							->condition('status', 1)
+							->orderBy('changed', 'DESC')
+							->range(0,1)
+							->execute()
+							->fetchField();
+	$date = date('d/m/Y', $timestamp);
+return $date;
+}
+
+function get_node_last_update(){
+	$arg0 = arg(0);
+	$arg1 = arg(1);
+	$arg2 = arg(2);
+	if($arg0 == "node" && is_numeric($arg1)){
+		$load_node = node_load($arg1);
+		//print_r($load_node);
+		$timestamp = $load_node->changed;
+		$date = date('d/m/Y', $timestamp);
+	}else{ 
+		$timestamp = db_select('node', 'n')
+							->fields('n', array('changed'))
+							->condition('status', 1)
+							->condition('type', $arg0)
+							->orderBy('changed', 'DESC')
+							->range(0,1)
+							->execute()
+							->fetchField();
+		if($timestamp){
+			$date = date('d/m/Y', $timestamp);
+		}else{
+			$date = get_site_last_update();
+		}
+		
+	}
+return $date;
+}
+
+
+
+/************
+*** function to get data in table form.
+*************/
+function table_list($nid) {
+
+	$header = array('Title', 'Description');
+	$rows = array();
+	$no_yes = array('No', 'Yes');
+	$load_data = node_load($nid);
+	$items = field_get_items('node', $load_data, 'field_proactive_set');
+	foreach ($items as $item) {
+		$fc = field_collection_field_get_entity($item);
+		$rows[] = array($fc->field_proactive_title['und'][0]['value'],
+						$fc->field_proactive_description['und'][0]['value'],
+		);
+	}
+	$output = theme('table', array('header' => $header,
+                  	         'rows' => $rows, 'caption' => $load_data->title, ));
+
+  return $output;
+
+}
+
+function cmf_preset_external_links($text){
+	global $base_url;
+	$str = t("External site that opens in a new window ");
+	$text = preg_replace(
+	  '#((href=\"(https?|ftp))(\S*?\.\S*?))([\s)\[\]{},;"\':<]|\.\s|$)#i',
+	  "href=\"$3$4\" target=\"_BLANK\" title=\"$str\"",
+	  $text
+	);
+	$str = t("The External PDF File that opens in a new window ");
+	$text = preg_replace(
+	  '#((href=(\")(https?|ftp))(\S*?\.\S*?))(\.pdf)([\s)\[\]{},;"\':<]|\.\s|$)#i',
+	  "href=\"$4$5$6\" target=\"_BLANK\" title=\"$str\"",
+	  $text
+	);
+	$str = t("The PDF that opens in a new window ");
+	$text = preg_replace(
+	  '#((href=(\")('.$base_url.'))(\S*?\S*?))(\.pdf)([\s)\[\]{},;"\':<]|\.\s|$)#i',
+	  "href=\"$4$5$6\" target=\"_BLANK\" title=\"$str\" ",
+	  $text
+	);
+	preg_match_all("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $text, $matches);
+	$letters = array('@','.');
+	$replace = array('[at]','[dot]');
+	$old = array();
+	foreach($matches[0] as $val)
+	{
+		$old[] = $val;
+		if(!form_get_errors()){
+			$new[] = str_replace($letters,$replace,$val);
+		}else{
+			$new[] = $val;
+		}
+	}
+	if(count($old) > 0)
+	{
+		return str_replace($old,$new,$text);
+	}
+	else
+	{
+		return $text;
+	}
+	/*$text = preg_replace(
+	  '#((href=(\"?\')(https?|ftp))(\S*?\.\S*?))(\.pdf(\"?\'))([\s)\[\]{},;"\':<]|\.\s|$)#i',
+	  "href=\"$3$4$5\" target=\"_BLANK\" title=\"$str\" ",
+	  $text
+	);
+	$text = preg_replace(
+	  '#((<img src=\"(https?|ftp))(\S*?\.\S*?))([\s)\[\]{},;"\':<]|\.\s|$)#i',
+	  "$1\" target=\"_BLANK\" title=\"External site that opens in a new window\"",
+	  $text
+	);*/
+	return $text;
+}
+
+
+
+
+
+
+function cmf_preset_views_email_filter($text)
+{
+	
+	preg_match_all("/[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})/i", $text, $matches);
+	$letters = array('@','.');
+	$replace = array('[at]','[dot]');
+	$old = array();
+	foreach($matches[0] as $val)
+	{
+		$old[] = $val;
+		$new[] = str_replace($letters,$replace,$val);
+	}
+	if(count($old) > 0)
+	{
+		return str_replace($old,$new,$text);
+	}
+	else
+	{
+		return $text;
+	}
+}
+
+?>

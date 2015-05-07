@@ -1,0 +1,127 @@
+/*Responsive css*/
+@media screen and (max-width:1179px)
+{
+.wrapper{ width:100%; box-sizing: border-box; padding:0 5px;}
+header .header_top_nav_right { width: 50%; }
+header .main_header .logo span {  width: 60%;}
+header .main_header .nav_search{ width:30%;}
+header .main_header .logo {width: 63%;}
+header .main_header .nav ul li a { padding: 15px 9px; font-size:1.3em;}
+header .main_header .nav ul li:hover a { padding: 15px 11px; font-size:1.3em;}
+footer .footer_nav ul li {  border-right: medium none;  padding: 7px 0;  width: 30%;}
+.speeche ul li { width:17%; }
+.middle-content .main-link ul li {  margin: 5px 11px;  width: 30%;}
+.middle-content .latest-news .lnews-head .nav-button {width: 10%;}
+.middle-content .main-content .about-msme { width:68%; }
+.banner-main .slider-news ul li { float: left;  margin: 0 25px;   width: 45%;}
+.banner-main .slider-news { width: 100%; margin:20px 0;}
+.middle-content .latest-news .news-heading { background-position: right center, 12px 9px;}
+.innerleft {  margin: 0 20px 0 0; width: 30%;}
+.innerright { width: 67%;}
+.org-wrapp ul li { width:30%;}
+}
+
+
+@media screen and (min-device-width: 641px) and (max-device-width: 900px) { 
+
+
+header .header_top_nav_left {width: 40%;}
+header .header_top_nav_right { width: 60%; }
+header .main_header .logo { width:100%;}
+header .main_header .nav_search{ width:50%; margin: 0 0 10px; }
+header .main_header .nav ul li a { padding: 0 5px;}
+header .header_top_nav_right .skip_cont { display:none;}
+header .main_header .nav_search input[type="search"] {width: 92px;}
+header .main_header .nav_search input[type="submit"] {background: url("../image/search_icon.png") no-repeat scroll 2px 9px #ccc; width: 28px;}
+header .main_header .nav_sitemap { width:46%; margin-top: 9px; }
+.speeche ul li{ width:100%; float:left; border-bottom: 1px solid #d2625f; padding:10px 0px;   text-align: center; border-right:none; }
+footer .footer_nav {width: 100%;}
+footer .language_changer {width: 96%;}
+footer .footer_nav ul li { padding: 0 0.9% 0 0.8%; }
+.innerleft { margin: 0 15px 0 0; width: 40%;}
+.innerright { width: 57%; }
+.org-wrapp ul li { width:45% }
+.middle-content .main-link ul li {  width: 45%; }
+header .main_header .logo span { width: 64%; }
+.middle-content .main-content .about-msme {  margin: 25px 21px 0 0; }
+.banner-main .slider-news ul li {    background: none repeat scroll 0 0 #eeeeee;    border: 2px solid #c9c9c9;    float: left;      margin: 10px .7% 10px 0;    min-height: 156px;    width: 49%;}
+.banner-main .slider-news {    float: left;    width: 100%;}
+.banner-main .slider-news ul li:nth-of-type(2) {    margin: 10px 0 0;}
+.middle-content .latest-news .news-heading{background-image: url("../image/l-news.jpg"), none;}
+header .main_header .nav ul { display:none;}
+header .main_header .nav .toggle_menu { display:block;}
+header .main_header .nav ul li {  height: 20px;  margin: 0;  padding: 5px 0;  width: 100%;}
+header .main_header .nav ul li:hover{ background:#8ec02b;  float: left;  height:20px; margin: 0px;  list-style-image: none; list-style-type: none;  padding:5px 0;}
+header .main_header .nav ul li:hover a{padding:0px 0 0 12px; background:none;}
+header .main_header .nav ul li a {  border-right: none; padding: 0 12px;}
+header .main_header .nav ul li ul { left: 12px;  top:0px;  width: 94%; position:relative;}
+.banner-main .slider { float: left;  width:100%;}
+.banner-main .slider .bjqs-wrapper{width:100%;}
+p.bjqs-caption {font-size: 1.2em; width: 58%;}
+ol.bjqs-markers.h-centered{display:none;}
+}
+
+@media screen and (max-width:640px)
+{
+.bjqs-markers{display:none;}	
+header .header_top_nav_left { width:auto; float:none; display:table; margin:0 auto;}	
+header .header_top_nav_right {  width: 100%;  margin-bottom: 5px;}
+header .main_header .logo { width:100%;}
+header .main_header .logo a img { float: none;}
+header .main_header .logo a{ text-align:center; line-height:inherit;}
+header .main_header .logo span { width:100%; padding:0;  font-size: 1.1em;}
+header .main_header .nav_search { width: 99%; margin-bottom:10px; margin-top:0; }
+header .main_header .nav_search input[type="search"] { width: 78%; float:left;}
+header .main_header .nav_search input[ type=submit] { width:40px;  background:url("../image/search_icon.png") no-repeat scroll 8px 9px #ccc; }
+header .main_header .nav_sitemap {   float: none;margin: 0 auto 6px;width: 18%;}
+header .main_header .nav ul { display:none;}
+header .main_header .nav .toggle_menu { display:block;}
+header .main_header .nav ul li { height:auto; padding:5px 0; margin:0; width: 100%;}
+header .main_header .nav ul li a {  border-right: none; padding: 0 12px;}
+header .main_header .nav ul li ul { left: 12px;  top:0px;  width: 94%; position:relative;}
+header .main_header .nav ul li ul li a{padding:10px 0}
+header .main_header .nav ul li ul li a:hover{padding:10px 0}
+header .header_top_nav_right .tophead_line5 {display:none;}
+header .header_top_nav_right .tophead_line6 {display:none;}
+header .header_top_nav_right .tophead_line7 {display:none;}
+header .header_top_nav_right .skip_cont { display:none;}
+
+.middle-content .main-content .about-msme {  margin: 0;  width: 99%;}
+.middle-content .main-content .new-msme {  float: left;  width: 100%;}
+.org-wrapp ul li {    width: 100%;}
+header .maintitle { border-left:none;}
+.middle-content .latest-news .lnews-head .lnews-title {  width: 100%;   margin: 8px 0; text-align:left;}
+.middle-content .latest-news .lnews-head .nav-button { width: 60%;}
+
+.banner-main .slider-news {    display: table;    float: left;    margin: 10px auto 0;    width: 100%;}
+.middle-content .latest-news .lnews-head { width:100%}
+.middle-content .latest-news .news-heading { width:80%}
+.banner-main .slider .bjqs-wrapper ul li img{ width:100%!important;}
+header .main_header .nav ul li:hover{ background:#8ec02b;  float: left;  height:20px; margin: 0px;  list-style-image: none; list-style-type: none;  padding:5px 0;}
+header .main_header .nav ul li:hover a{padding:10px 0; background:none;}
+.middle-content .main-link ul li { margin: 10px 0; width: 100%; }
+.banner-main .slider-news ul li { width: 100%;box-sizing: border-box; margin:0 0 10px 0; }
+.banner-main .slider { float: left;  width:100%;}
+.banner-main .slider .bjqs-wrapper{width:100%;}
+p.bjqs-caption {font-size: 1.2em; width: 58%;}
+
+
+.speeche ul li{ width:100%; float:left; border-bottom: 1px solid #0a4e75; text-align:center;  padding:10px 0px;  border-right:none; }
+footer  .footer_toggle_menu{ background: none repeat scroll 0 0 #fff;    box-sizing: border-box;    color: #000;    display: block;    font-size: 1.3em;    padding: 4px 0 4px 10px;}
+footer  .footer_nav ul{ display:none; border: 1px solid #fff;}
+footer .language_changer { text-align:center;}
+footer .footer_nav ul li {border-bottom: 1px dotted #333;  border-right: medium none;  box-sizing: border-box;  padding: 6px 0 6px 10px;  width: 100%; }
+footer .language_changer { width: 100%; }
+footer .footer_nav { float: none;   margin: 0 auto;    width: 82%;}
+	
+.innerleft { margin: 0; width: 100%;}
+.innerright { width: 100%; }
+
+}
+
+@media screen and (max-width:320px)
+{
+
+
+}
+

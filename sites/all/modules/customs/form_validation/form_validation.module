@@ -1,0 +1,120 @@
+<?php
+
+function form_validation_form_alter(&$form, $form_state, $form_id) {
+	/*if ( $form_id  == 'page_node_form' || $form_id  == 'media_node_form' ||  $form_id  == 'rfd_node_form' ||  $form_id  == 'rti_node_form'  || 	$form_id == 'services_node_form') {
+		$form['field_newsletter']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id == 'award_details_node_form' || $form_id == 'services_node_form' ||  $form_id  == 'project_node_form' ||  $form_id  == 'page_node_form' ){
+		$form['field_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id == 'documents_node_form'||  $form_id  == 'project_node_form'){
+		$form['field_documents']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id == 'award_details_node_form'){
+		$form['field_doc_file']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}  
+	if ($form_id == 'award_details_node_form'){
+		$form['field_banner_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id  == 'banner_node_form' ){
+		$form['field_banner_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id  == 'emplyee_details_node_form'){
+		$form['field_emplyee_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id  == 'page_header__node_form'){
+		$form['field_header_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id  == 'news_node_form'){
+		$form['field_news_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	if ($form_id  == 'home_animation_node_form' || $form_id == 'home_banner_animation_node_form' ){
+		$form['field_animation_image']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}*/
+	
+	if($form_id  == 'acts_node_form'){
+		$form['field_attached']['und'][0]['#upload_validators']['form_validate_upload_validate'] = array();
+	}
+	
+	return $form;
+}
+function form_validate_custom_form_validate(&$form, $form_state){
+	
+	if(array_key_exists('title',$form)){
+		if(common_utility_check_blacklist($form['title']['#value'])){
+			echo  t('Title is not valid arguments!!!');
+			exit();
+		}
+	}
+	if(array_key_exists('type',$form)){	
+		if(common_utility_check_blacklist($form['type']['#value'],'str')){
+			echo  t('Content type is not valid arguments!!!');
+			exit();
+		}
+	}
+	if(array_key_exists('name',$form)){	
+		if(common_utility_check_blacklist($form['name']['#value'],'str')){
+			echo  t('Content type is not valid arguments!!!');
+			exit();
+		}
+	}
+	if(array_key_exists('field_state_tid',$form)){
+		if(!is_numeric($form['field_state_tid']['#value']) && trim($form['field_state_tid']['#value']) != 'All'){
+			echo  t('State is not valid arguments!!!');
+			exit();
+		}
+	}
+}
+function form_validate_upload_validate($file) {
+	$errors = array();
+	$finfo = finfo_open(FILEINFO_MIME_TYPE);
+	if (!$finfo) {
+		$errors[] = t('File Info Library Missing');       	
+   	}
+   	else {
+		$filepath =$file->uri;
+		$filename =$file->filename;
+		$mimetyy = finfo_file($finfo, $filepath, FILEINFO_MIME_TYPE);		
+		$tyy = explode("/", $mimetyy);
+		$path_info = pathinfo($filename);
+		$extt = $path_info['extension'];
+		$iserror = false;
+		switch($tyy[1]) {
+			case 'plain':
+				if ($tyy[0]=='text') { 
+					$ext_match = array('doc','docx','txt');					
+				}
+				break;
+			case 'zip':
+				if ($tyy[0]=='application') { 
+					$ext_match = array('doc','docx','txt');					
+				}
+				break;
+			case 'pdf':
+				if ($tyy[0]=='application') { 
+					$ext_match = array('pdf');					
+				}
+				break;
+			case 'vnd.oasis.opendocument.text':
+				$ext_match = array('odt');
+				break;
+			case 'jpeg':
+				$ext_match = array('jpg','png','gif','JPG');
+				break;
+			case 'png':
+				$ext_match = array('jpg','png','gif','JPG');
+				break;
+			case 'gif':
+				$ext_match = array('jpg','png','gif','JPG');
+				break;
+			default:
+				$iserror = true;
+				break;
+		}		
+		if (in_array(strtolower($extt), $ext_match) && !$iserror){ }
+		else {
+			$errors[] = t('Not a Valid File Type');
+		}
+	}
+	return $errors;
+}
